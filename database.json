@@ -3,8 +3,17 @@
     "admin": [
         {
             "id": 1000,
-            "email": "admin@dashboard.com",
+            "fristname": "ali",
+            "lastname": "mohsenpour",
+            "email": "aliadmin@dashboard.com",
             "password": "68002100"
+        },
+        {
+            "id": 1001,
+            "fristname": "mahdi",
+            "lastname": "shoaei",
+            "email": "mahdiadmin@dashboard.com",
+            "password": "777955"
         }
     ]
 }
