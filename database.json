@@ -1,0 +1,10 @@
+{
+    "dashboard": {},
+    "admin": [
+        {
+            "id": 1000,
+            "email": "admin@dashboard.com",
+            "password": "68002100"
+        }
+    ]
+}
