@@ -16,17 +16,32 @@ const ThemeStatus = computed<string>(() => {
         class="defalut-layout-container"
     >
         <NuxtLoadingIndicator color="#fd7403" />
-        
-        <div class="router-container">
-            <slot />
+        <div class="default-layout-container">
+           <Sidebar />
+           <div class="router-container bg-blue">
+            <div class="top-bar bg-yellow">
+  
+            </div>
+              <slot />
+           </div>
         </div>
-       
     </div>
 </template>
 
 <style lang="scss" scoped>
-.defalut-layout-container{
+.default-layout-container{
     width: 100%;
     height: 100vh;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    .router-container{
+        width: 100%;
+        height: 100vh;
+        .top-bar{
+            width: 100%;
+            height: 50px;
+        }
+    }
 }
 </style>
