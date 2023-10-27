@@ -1,6 +1,6 @@
 <template>
     <div class="d-flex flex-column">
-        <span class="app-font-size-12">
+        <span class="app-font-size-12 app-color-white">
          {{ label }}
         </span>
         <input
@@ -12,6 +12,7 @@
             :value="modelValue"
             @input="$emit('update:modelValue', $event.target.value)"
             :type="type"
+            :placeholder="placeholder"
         >
         <span
          v-if="error"
@@ -49,6 +50,11 @@ const props = defineProps({
         default: "",
         required: false,
     },
+    placeholder: {
+        type: String,
+        default: "",
+        required: false,
+    }
 })
 
 import { applicationTheme } from '@/stores/applicationTheme'
@@ -66,8 +72,9 @@ input{
     outline: none;
     border-radius: 5px;
     padding: 5px 5px;
-    background: #dfdede;
+    background: #dbdbdb;
     color: #111111;
+    font-size: 14px;
 }    
 .core-input-error{
     border: 1px solid #f30000;
