@@ -18,10 +18,8 @@ const ThemeStatus = computed<string>(() => {
         <NuxtLoadingIndicator color="#fd7403" />
         <div class="default-layout-container">
            <Sidebar />
-           <div class="router-container bg-blue">
-            <div class="top-bar bg-yellow">
-  
-            </div>
+           <div class="router-container">
+              <TopBar />
               <slot />
            </div>
         </div>

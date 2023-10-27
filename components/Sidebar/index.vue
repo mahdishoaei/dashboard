@@ -1,7 +1,7 @@
 <template>
     <div
     :class="{'close-sidebar-status': !isOpen}" 
-    class="sidebar-container bg-red">
+    class="sidebar-container">
         <div class="d-flex w-100 justify-end px-2 py-2">
             <BootstrapIconArrowLeft 
             @click="changeSidebarStatus"
