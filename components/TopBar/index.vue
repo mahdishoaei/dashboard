@@ -1,6 +1,6 @@
 <template>
-    <div class="top-bar-container">
-        topbar...
+    <div class="top-bar-container d-flex align-center px-2 justify-end">
+        <ThemeSwichter/>
     </div>
 </template>
 
