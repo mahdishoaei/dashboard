@@ -16,7 +16,7 @@
         >
         <span
          v-if="error"
-         class="app-font-size-12 app-color-danger"
+         class="app-font-size-12 app-font-weight-800 app-color-danger"
         >
            {{ messageError }}
         </span>

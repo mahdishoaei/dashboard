@@ -26,7 +26,7 @@ const handleLogin = ()=>{
     if(!validEmail(form.value.email)){
         AccessToLogin = false
         error.value.email.status = true
-        error.value.email.message = 'invalid email !!!'
+        error.value.email.message = 'Invalid email !!!'
     } else {
         AccessToLogin = true
         error.value.email.status = false
@@ -94,6 +94,6 @@ const handleLogin = ()=>{
     -webkit-backdrop-filter: blur( 7px );
     border-radius: 10px;
     width: 330px;
-    height: 290px;
+    height: 300px;
 }
 </style>
