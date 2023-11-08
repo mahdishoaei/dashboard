@@ -1,25 +1,36 @@
 import { defineStore } from 'pinia'
 import { applicationUsersData } from '@/stores/applicationUsersData'
+import { errorToast } from '@/utils/toasMessage'
+import { generateToken } from '@/utils/generateToken'
 
 export const applicationUserData = defineStore('user' , {
 
     state: () => ({
         authenticated: false,
+        user : {}
     }) ,  
 
     actions : {
         checkUserAuthentication(param:any){
             const usersDataSource = applicationUsersData()
             const users = usersDataSource.users
-            const result :any = users.filter((user:any)=> {
+            const result :any = users.find((user:any)=> {
                 return user.email == param.email
-            }) 
-            if (result[0].password == param.password) {
-                this.authenticated = true
-                navigateTo('/dashboard')
+            })
+            if ( result ) {
+                if (result.password == param.password) {
+                    this.authenticated = true
+                    this.user = result
+                    this.user.token = generateToken(30)
+                    navigateTo('/dashboard')     
+                }else {
+                    this.authenticated = false
+                    errorToast('bottom-center', 'Password is incorect!!!')
+                }
             }else {
-                this.authenticated = false
+                errorToast('bottom-center', 'User is not exist!!!')
             }
+
                      
         }
     }

@@ -90,7 +90,7 @@ const handleLogin = ()=>{
     justify-content: center;
     align-items: center;
     background-image: url('https://img.freepik.com/free-photo/colleagues-giving-fist-bump_53876-64857.jpg?size=626&ext=jpg&ga=GA1.1.1903342389.1696077639&semt=sph');
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
 }
 .form-container{

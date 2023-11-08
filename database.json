@@ -7,7 +7,8 @@
             "lastname": "mohsenpour",
             "email": "aliadmin@dashboard.com",
             "password": "68002100",
-            "role": "admin"        
+            "role": "admin",
+            "token": ""           
         },
         {
             "id": 1001,
@@ -15,7 +16,8 @@
             "lastname": "shoaei",
             "email": "mahdiadmin@dashboard.com",
             "password": "777955",
-            "role": "admin"
+            "role": "admin",
+            "token": ""
         }
     ]
 }
