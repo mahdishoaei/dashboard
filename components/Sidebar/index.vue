@@ -21,89 +21,89 @@
         <div class="w-100  d-flex flex-column px-2 mt-10">
             <div 
             class="d-flex px-2 py-1 rounded app_pointer " 
-            :class="{'app-bg-white': Route.name === 'dashboard'}"
+            :class="{'app-bg-gray': Route.name === 'dashboard'}"
             @click="navigateTo('/dashboard')"
             >
-                <BootstrapIconBarChart/>
+                <img src="icons/dashboard.svg">
                 <span 
-                class="app-font-size-12 app-font-weight-600 px-2 " 
+                class="app-font-size-12 app-font-weight-400 px-2 " 
                 v-if="isOpen"
                 >Dashboard</span>
             </div>
             <div 
             class="d-flex px-2 py-1 mt-1 rounded app_pointer  " 
-            :class="{'app-bg-white': Route.name === 'tasks'}"
+            :class="{'app-bg-gray': Route.name === 'tasks'}"
             @click="navigateTo('/tasks')"
             >
-                <BootstrapIconCardChecklist/>
+                <img src="icons/task.svg">
                 <span 
-                class="app-font-size-12 app-font-weight-600 px-2 " 
+                class="app-font-size-12 app-font-weight-400 px-2 " 
                 v-if="isOpen"
                 >Tasks</span>
             </div>
             <div 
             class="d-flex px-2 py-1 mt-1 rounded app_pointer" 
-            :class="{'app-bg-white': Route.name === 'employes'}"
+            :class="{'app-bg-gray': Route.name === 'employes'}"
             @click="navigateTo('/employes')"
             >
-                <BootstrapIconPersonLinesFill/>
+               <img src="icons/employes.svg">
                 <span 
-                class="app-font-size-12 app-font-weight-600 px-2 " 
+                class="app-font-size-12 app-font-weight-400 px-2 " 
                 v-if="isOpen"
                 >Employes</span>
             </div>
             <div 
             class="d-flex px-2 py-1 mt-1 rounded app_pointer" 
-            :class="{'app-bg-white': Route.name === 'payment'}"
+            :class="{'app-bg-gray': Route.name === 'payment'}"
             @click="navigateTo('/payment')"
             >
-                <BootstrapIconCashCoin/>
+                <img src="icons/payment.svg">
                 <span 
-                class="app-font-size-12 app-font-weight-600 px-2 " 
+                class="app-font-size-12 app-font-weight-400 px-2 " 
                 v-if="isOpen"
                 >Payment</span>
             </div>
             <div 
             class="d-flex px-2 py-1 mt-1 rounded app_pointer" 
-            :class="{'app-bg-white': Route.name === 'products'}"
+            :class="{'app-bg-gray': Route.name === 'products'}"
             @click="navigateTo('/products')"
             >
-                <BootstrapIconBagCheck/>
+             <img src="icons/product.svg">
                 <span 
-                class="app-font-size-12 app-font-weight-600 px-2 " 
+                class="app-font-size-12 app-font-weight-400 px-2 " 
                 v-if="isOpen"
                 >Products</span>
             </div>
             <div 
             class="d-flex px-2 py-1 mt-1 rounded app_pointer" 
-            :class="{'app-bg-white': Route.name === 'wareHouse'}"
+            :class="{'app-bg-gray': Route.name === 'wareHouse'}"
             @click="navigateTo('/wareHouse')"
             >
-                <BootstrapIconHouseAdd/>
+                <img src="icons/wareHouse.svg">
                 <span 
-                class="app-font-size-12 app-font-weight-600 px-2 " 
+                class="app-font-size-12 app-font-weight-400 px-2 " 
                 v-if="isOpen"
                 >Ware House</span>
             </div>
             <div 
             class="d-flex px-2 py-1 mt-1 rounded app_pointer" 
-            :class="{'app-bg-white': Route.name === 'permissions'}"
+            :class="{'app-bg-gray': Route.name === 'permissions'}"
             @click="navigateTo('/permissions')"
             >
-                <BootstrapIconArrowLeftRight/>
+                <img src="icons/premision.svg">
                 <span 
-                class="app-font-size-12 app-font-weight-600 px-2 " 
+                class="app-font-size-12 app-font-weight-400 px-2 " 
                 v-if="isOpen"
                 >Permissions</span>
             </div>
             <div 
             class="d-flex px-2 py-1 mt-1 rounded app_pointer" 
-            :class="{'app-bg-white': Route.name === 'setting'}"
+            :class="{'app-bg-gray': Route.name === 'setting'}"
             @click="navigateTo('/setting')"
             >
-                <BootstrapIconGear/>
+               <img src="icons/setting.svg">
                 <span 
-                class="app-font-size-12 app-font-weight-600 px-2 " 
+                class="app-font-size-12 app-font-weight-400 px-2 " 
                 v-if="isOpen"
                 >Setting</span>
             </div>
