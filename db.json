@@ -1,23 +1,12 @@
 {
-    "dashboard": {},
-    "users": [
-        {
-            "id": 1000,
-            "fristname": "ali",
-            "lastname": "mohsenpour",
-            "email": "aliadmin@dashboard.com",
-            "password": "68002100",
-            "role": "admin",
-            "token": ""           
-        },
-        {
-            "id": 1001,
-            "fristname": "mahdi",
-            "lastname": "shoaei",
-            "email": "mahdiadmin@dashboard.com",
-            "password": "777955",
-            "role": "admin",
-            "token": ""
-        }
-    ]
+  "dashboard": {},
+  "users": [
+    {
+      "id": 1000,
+      "email": "admin@yahoo.com",
+      "password": "68002100",
+      "role": "admin",
+      "token": "D5IV768zvvBLq1y5MxCWbTKOuWIsIM"
+    }
+  ]
 }

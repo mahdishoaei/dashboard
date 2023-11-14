@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
+    // '@nuxtjs/axios',
     // '@nuxt/image',
     'nuxt-bootstrap-icons'
   ],
